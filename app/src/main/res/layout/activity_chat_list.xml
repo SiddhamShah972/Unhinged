@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_background"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/Text.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:text="Messages"
+        android:textColor="@color/dark_text_primary" />
+
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:background="@drawable/search_bar_background"
+        android:drawableStart="@android:drawable/ic_menu_search"
+        android:drawablePadding="12dp"
+        android:fontFamily="@font/poppins_regular"
+        android:hint="Search"
+        android:padding="14dp"
+        android:textColor="@color/dark_text_primary"
+        android:textColorHint="@color/dark_text_secondary" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvStories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:clipToPadding="false"
+        android:orientation="horizontal"
+        android:paddingHorizontal="12dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_story_contact"
+        tools:itemCount="5"/>
+
+    <TextView
+        style="@style/SectionHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp"
+        android:text="Messages"
+        android:textColor="@color/dark_text_primary" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvConversations"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_chat_conversation"
+        tools:itemCount="5"/>
+
+</LinearLayout>

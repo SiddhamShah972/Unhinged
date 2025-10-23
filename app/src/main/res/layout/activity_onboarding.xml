@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_background">
+
+    <!-- Background Image will fill the whole screen -->
+    <ImageView
+        android:id="@+id/ivBackgroundImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:src="@tools:sample/backgrounds/scenic" />
+    [Image of a stylish young couple]
+
+    <!-- Gradient Overlay also fills the whole screen -->
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/onboarding_gradient"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!--
+      This LinearLayout is constrained to the bottom of the screen.
+      It will always stay at the bottom.
+    -->
+    <LinearLayout
+        android:id="@+id/bottom_sheet"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/btnGoogleSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnCreateAccount"
+            style="@style/Button.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Account" />
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:padding="8dp"
+            android:text="Already have an account? Login"
+            android:textColor="@color/dark_text_secondary" />
+    </LinearLayout>
+
+    <!--
+      This content is centered and constrained between the top of the screen
+      and the top of the button area, so it will always have space.
+    -->
+    <TextView
+        android:id="@+id/tvWelcomeTitle"
+        style="@style/Text.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_title"
+        android:textColor="@color/dark_text_primary"
+        app:layout_constraintVertical_bias="0.8"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottom_sheet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

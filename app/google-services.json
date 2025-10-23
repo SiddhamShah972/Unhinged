@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "994786350595",
+    "project_id": "unhinged-b0263",
+    "storage_bucket": "unhinged-b0263.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:994786350595:android:2c5c3a87f16e8a9286a036",
+        "android_client_info": {
+          "package_name": "com.example.mad_unhinged"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "994786350595-ctq87thmp9ktt72chh3vicm5jr9c1ukq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDz83irEUe9wDI3npShkN4rN5OCo3k4PEA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "994786350595-ctq87thmp9ktt72chh3vicm5jr9c1ukq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

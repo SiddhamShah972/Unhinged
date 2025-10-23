@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingHorizontal="12dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivStoryProfile"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:padding="3dp"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full"
+        app:strokeColor="@color/brand_primary"
+        app:strokeWidth="2dp"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvStoryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/dark_text_secondary"
+        android:textSize="14sp"
+        tools:text="Martin" />
+</LinearLayout>

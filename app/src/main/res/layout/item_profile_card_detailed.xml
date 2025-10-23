@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="24dp"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="@color/dark_surface">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Background User Image -->
+        <ImageView
+            android:id="@+id/ivProfileImage"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <!-- Dark Gradient Overlay -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/button_primary_gradient"
+            android:alpha="0.8"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <!-- Name, Age, Location Section -->
+                <TextView
+                    android:id="@+id/tvPremium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="★ PREMIUM"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/poppins_medium"/>
+
+                <TextView
+                    android:id="@+id/tvUserNameAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Elizabeth 18 ♡"
+                    android:textColor="@color/dark_text_primary"
+                    android:textSize="36sp"
+                    android:fontFamily="@font/poppins_bold" />
+
+                <TextView
+                    android:id="@+id/tvLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="USA, California"
+                    android:textColor="@color/dark_text_secondary"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/poppins_regular"/>
+
+                <!-- Stats Section -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:drawableTop="@drawable/ic_location_pin"
+                        android:text="2,5 km"
+                        style="@style/StatPill"/>
+                    <TextView
+                        android:drawableTop="@drawable/ic_weight_scale"
+                        android:text="55 Kg"
+                        style="@style/StatPill"/>
+                    <TextView
+                        android:drawableTop="@drawable/ic_height_ruler"
+                        android:text="178 cm"
+                        style="@style/StatPill"/>
+                </LinearLayout>
+
+                <!-- About Section -->
+                <TextView
+                    android:text="About"
+                    android:layout_marginTop="24dp"
+                    style="@style/SectionHeader"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Hi! When a user passes on a match, the conversation would close for both users... I love Netflix, horses and books!"
+                    android:textColor="@color/dark_text_secondary"
+                    android:fontFamily="@font/poppins_regular"
+                    android:lineSpacingMultiplier="1.2"/>
+
+                <!-- More Info Section -->
+                <TextView
+                    android:text="More info"
+                    android:layout_marginTop="24dp"
+                    style="@style/SectionHeader"/>
+
+                <com.google.android.material.chip.ChipGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp">
+
+                    <!-- ADDED layout_width and layout_height TO EACH CHIP -->
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Women"
+                        style="@style/InfoChip"/>
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ballet dancer"
+                        style="@style/InfoChip"/>
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Harvard"
+                        style="@style/InfoChip"/>
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Have cat"
+                        style="@style/InfoChip"/>
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hobby"
+                        style="@style/InfoChip"/>
+                </com.google.android.material.chip.ChipGroup>
+
+                <!-- Archive Section (placeholder for RecyclerView) -->
+                <TextView
+                    android:text="Archive"
+                    android:layout_marginTop="24dp"
+                    style="@style/SectionHeader"/>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    android:layout_marginTop="8dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView style="@style/ArchiveImage" tools:src="@tools:sample/avatars"/>
+                        <ImageView style="@style/ArchiveImage" tools:src="@tools:sample/avatars"/>
+                        <ImageView style="@style/ArchiveImage" tools:src="@tools:sample/avatars"/>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

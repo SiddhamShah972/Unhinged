@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id">994786350595-ctq87thmp9ktt72chh3vicm5jr9c1ukq.apps.googleusercontent.com</string>
+
+    <string name="app_name">UnHinged</string>
+
+    <!-- Onboarding & Registration -->
+    <string name="welcome_title">UnHinged</string>
+    <string name="welcome_subtitle">Gen Z Matrimony. Done right.</string>
+    <string name="sign_in_with_google">Continue with Google</string>
+    <string name="sign_in_with_phone">Use Phone Number</string>
+    <string name="terms_and_conditions">By continuing, you agree to our Terms and Privacy Policy.</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="create_account">Create Account</string>
+
+    <!-- Profile Setup -->
+    <string name="profile_setup_title">Set Up Your Profile</string>
+    <string name="add_photos">Add Photos</string>
+    <string name="bio">About Me</string>
+    <string name="bio_hint">Write a short bio to introduce yourself...</string>
+    <string name="voice_intro">Record a Voice Intro</string>
+    <string name="record_button_desc">Record audio clip</string>
+    <string name="connect_spotify">Connect Spotify</string>
+    <string name="spotify_description">See who shares your taste in music.</string>
+    <string name="save_and_continue">Save &amp; Continue</string>
+
+    <!-- Swiping Screen -->
+    <string name="user_name_age">%1$s, %2$d</string>
+    <string name="user_location">Lives in %1$s</string>
+    <string name="action_reject">Reject</string>
+    <string name="action_superlike">Super Like</string>
+    <string name="action_like">Like</string>
+
+    <!-- Match & Chat -->
+    <string name="its_a_match">It\'s a Match!</string>
+    <string name="match_description">You and %1$s have liked each other.</string>
+    <string name="send_a_message">Send a Message</string>
+    <string name="keep_swiping">Keep Swiping</string>
+    <string name="type_a_message">Type a message...</string>
+    <string name="rizz_bot_suggestion">Use Rizz Bot</string>
+
+    <!-- Profile Detail -->
+    <string name="top_artists">Top Spotify Artists</string>
+</resources>
